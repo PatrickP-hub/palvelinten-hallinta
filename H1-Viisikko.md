@@ -159,10 +159,16 @@
 ## Lähteet
 
 Tero Karvinen 2025: Palvelinten Hallinta https://terokarvinen.com/palvelinten-hallinta/
+
 Karvinen 2025: Install Salt on Debian 13 Trixie https://terokarvinen.com/install-salt-on-debian-13-trixie/
+
 Karvinen 2023: Run Salt Command Locally https://terokarvinen.com/2021/salt-run-command-locally/
+
 Karvinen 2018: Salt Quickstart - Salt Stack Master and Slave on Ubuntu Linux https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+
 Karvinen 2006: Raportin kirjoittaminen https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
+
 Karvinen 2024: Install Debian on Virtualbox https://terokarvinen.com/2021/install-debian-on-virtualbox/
+
 Salt install guide https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html
 
