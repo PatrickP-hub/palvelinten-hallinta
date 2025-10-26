@@ -1,26 +1,26 @@
-#H1 Viisikko
+# H1 Viisikko
 
-##Lue ja tiivistä
+## Lue ja tiivistä
 
-###Install Salt on Debian 13 Trixie. https://terokarvinen.com/install-salt-on-debian-13-trixie/
+### Install Salt on Debian 13 Trixie. https://terokarvinen.com/install-salt-on-debian-13-trixie/
 
 - Salt on konfiguraatiohallintatyökalu, jonka avulla voi esimerkiksi hallita suurta määrää Windows ja Linux tietokoneita.
 - Saltin avulla voi määritellä infrastruktuurin koodina.
 - Apt repositorion lisäämisen jälkeen päivitykset tulevat automaattisesti.
 
-###Run Salt Command Locally. https://terokarvinen.com/2021/salt-run-command-locally/
+### Run Salt Command Locally. https://terokarvinen.com/2021/salt-run-command-locally/
 
 - Salt-komentoja voi suorittaa paikallisesti ja nähdä tulos heti.
 - Windowsissa ja Linuxissa on samat komennot.
 - Tärkeimmät toiminnot ovat: 'pkg', 'file', 'sevice', 'cmd' ja 'user'.
 - Saltia käytetään hallitsemaan suurta määrää orjakoneita verkon yli.
 
-###Salt Quickstart - Salt Stack Master and Slave on Ubuntu Linux. https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+### Salt Quickstart - Salt Stack Master and Slave on Ubuntu Linux. https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
 
 - Saltin avulla voit hallita tuhansia tietokoneita.
 - Orjakoneita voi hallita vaikka ne olisivat NATin, palomuurin takana tai tuntemattomassa osoitteessa.
 
-###Raportin Kirjoittaminen. https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
+### Raportin Kirjoittaminen. https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 
 - Raportoi samalla kun teet tehtävää
 - Viittaa lähteisiin, käytä väliotsikoita ja käytä mennyttä aikamuotoa
