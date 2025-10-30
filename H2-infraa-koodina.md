@@ -86,6 +86,25 @@ Sitten siirryin 'cd /srv/salt' ja tarkistin että olin oikeassa kansiossa 'pwd'.
 
 <img width="367" height="55" alt="image" src="https://github.com/user-attachments/assets/9184dfdf-b4b4-4cb7-9d83-c6198c51afbe" />
 
+Tämän jälkeen tein salt kansioon "sls" kansion ja sitten siirryin 'cd' komennolla kansioon.
+
+<img width="458" height="73" alt="image" src="https://github.com/user-attachments/assets/d6b8c1a4-2d9e-42e4-8329-f7d692a9cf8e" />
+
+Kun tämä vaihe oli tehty tein esimerkkitiedoston 'sudoedit init.sls' GNU nano editorilla. 
+Kirjoitin tiedostoon /tmp/slstiedosto: ja file.managed , mikä pitäisi tehdä esimerkkitiedoston onnistuneesti.
+
+<img width="340" height="128" alt="image" src="https://github.com/user-attachments/assets/7de37cd0-5b29-4ad8-bbbc-272cbc6b0a6e" />
+
+Ctrl + X, Y ja enter. Että sain tallennettua tiedoston. 
+Nyt oli vihdoin aika antaa komento: 'sudo salt-call --local state.apply sls' 
+
+<img width="449" height="363" alt="image" src="https://github.com/user-attachments/assets/55c13e71-10fe-471b-bda8-e6b47ceed6b8" />
+
+Kuten kuvassa näkyy "slstiedosto created" tiedosto oli onnistuneesti tehty. 
+Testasin viellä 'cat /srv/salt/sls/init.sls', jonka pitäisi näyttää että esimerkkitiedosto näkyy. 
+
+<img width="601" height="58" alt="image" src="https://github.com/user-attachments/assets/2183f070-98c1-43d1-a8fc-7489ddfca373" />
+
 
 
 b) Topping.
