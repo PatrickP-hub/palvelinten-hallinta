@@ -58,7 +58,7 @@ Aloitin harjoituksen torstaina päivällä 30.10.2025 omalla läppärilläni.
 
 Tiivistelmiin meni noin tunnin verran aikaa.
 
-a) Hei infrakoodi! 
+## a) Hei infrakoodi! 
 
 Kokeilin 'sudo salt-call --local' komennolla toimiko koodi paikallisesti. 
 
@@ -105,7 +105,7 @@ Testasin viellä 'cat /srv/salt/sls/init.sls', jonka pitäisi näyttää että e
 
 <img width="601" height="58" alt="image" src="https://github.com/user-attachments/assets/2183f070-98c1-43d1-a8fc-7489ddfca373" />
 
-b) Topping.
+## b) Topping.
 
 Seuraavana vuorossa oli tehdä top-file, jonka aloitin samalla tavalla kuin sls. tiedoston tekemisen 
 Komento 'sudo mkdir /srv/salt/top.sls' tein tiedoston salttiin ja menin muokkaamaan tiedostoa 'sudoedit top.sls' komennolla
@@ -132,45 +132,47 @@ Sitten oli aika taas ajaa komento 'sudo salt-call --local state.apply'
 
 Sain siis suoritettua komennon joka ajoi kaikki tilat kerralla, eikä vain pelkkää tiedostoa.
 
-c) Viisikko tiedostossa.
+## c) Viisikko tiedostossa.
 
 Tässä tehtävässä tein viiden tärkeimmän tilafunktion avulla init.sls tiedoston. 
 Aluksi ennen jokaisen tiedoston tekemistä menin komennolla 'cd /srv/salt' polkuun josta pääsin tekemään jokaiselle tiedostolle oman tilan kuten esimerkiksi "hellouser" tai "hellopkg" 'sudo mkdir' komennolla. Tein jokaiseen tilaan funktion 'sudoedit init.sls' avulla. 
 
 <img width="1234" height="800" alt="image" src="https://github.com/user-attachments/assets/d7b9c1e0-cdc0-44be-8f39-0f902cf6e45f" />
 
-1.pkg 
+### 1.pkg 
 
 GNU nanoeditoriin laitoin funktion joka asentaa pkg-paketin. 
 
 <img width="178" height="76" alt="image" src="https://github.com/user-attachments/assets/f7fa34be-197e-404d-9a85-762c5fc67fd2" />
 
-2. file
+### 2. file
 
 Tässä tiedostossa tein samalla lailla kuin edellisessä tehtävässä eli ekalle riville tiedosto, toiselle file.managed' ja vikalle teksti.
 
 <img width="316" height="78" alt="image" src="https://github.com/user-attachments/assets/df79e75b-225a-4d72-8369-3570c333b5e4" />
 
-3. service
+### 3. service
 
 Tässä tilafunktiossa tein GNU nano editoriin sshd-palvelun käynnissä pitävän funktion.
 
 <img width="249" height="78" alt="image" src="https://github.com/user-attachments/assets/05c39aca-249a-4f05-ac4e-542cc50d56e6" />
 
-4. user
+### 4. user
 
 User tilafunktioon tein testikäyttäjän ja sille oman kommentin
 
 <img width="249" height="78" alt="image" src="https://github.com/user-attachments/assets/1debcafb-b313-4fd0-b238-d72c424e3c9f" />
 
-5. cmd
+### 5. cmd
 
 Cmd osio oli minusta kaikista vaikein sillä, en oikein alkuun ymmärtänyt mitä cmd funktio tekee. Lopuksi tajusin, että cmd tilafunktiolla sain tulostettua tekstin konsoliin alla olevilla tiedoilla:
 
 <img width="255" height="78" alt="image" src="https://github.com/user-attachments/assets/a4d30af2-10bd-4711-990c-acac37d27e84" />
 
 
-d) Tee sls-tiedosto
+## d) Tee sls-tiedosto
+
+
 
 
 
