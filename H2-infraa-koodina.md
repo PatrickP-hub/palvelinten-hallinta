@@ -122,9 +122,53 @@ Tämän jälkeen suoritin komennon 'sudo salt-call --local state.apply' , jolla 
 <img width="706" height="311" alt="image" src="https://github.com/user-attachments/assets/4d487fd6-e273-44bf-aa58-64897b479fcb" />
 
 Sain kuitenkin virhe ilmoituksen, että "top file" ei löydy.
+Kokeilin poistaa sudo rm -r /srv/salt/top.sls tiedoston ja kokeilin alusta asti uudestaan.
 
+Tämän jälkeen tein 'init.sls' tiedoston jonka lisäsin /srv/salt/tiedosto/ polkuun ja tein sinne "Hei maailma!" tekstisen tiedoston.
+Kun olin tehnyt init.sls tiedoston tein top.sls tiedoston /srv/salt/ polkuun ja GNU nano editoriin samat tiedot kuin viimeksi.
+Sitten oli aika taas ajaa komento 'sudo salt-call --local state.apply'
+
+<img width="563" height="431" alt="image" src="https://github.com/user-attachments/assets/a6cf8dba-35b9-4973-8bc2-12566cb2b41d" />
+
+Sain siis suoritettua komennon joka ajoi kaikki tilat kerralla, eikä vain pelkkää tiedostoa.
 
 c) Viisikko tiedostossa.
+
+Tässä tehtävässä tein viiden tärkeimmän tilafunktion avulla init.sls tiedoston. 
+Aluksi ennen jokaisen tiedoston tekemistä menin komennolla 'cd /srv/salt' polkuun josta pääsin tekemään jokaiselle tiedostolle oman tilan kuten esimerkiksi "hellouser" tai "hellopkg" 'sudo mkdir' komennolla. Tein jokaiseen tilaan funktion 'sudoedit init.sls' avulla. 
+
+<img width="1234" height="800" alt="image" src="https://github.com/user-attachments/assets/d7b9c1e0-cdc0-44be-8f39-0f902cf6e45f" />
+
+1.pkg 
+
+GNU nanoeditoriin laitoin funktion joka asentaa pkg-paketin. 
+
+<img width="178" height="76" alt="image" src="https://github.com/user-attachments/assets/f7fa34be-197e-404d-9a85-762c5fc67fd2" />
+
+2. file
+
+Tässä tiedostossa tein samalla lailla kuin edellisessä tehtävässä eli ekalle riville tiedosto, toiselle file.managed' ja vikalle teksti.
+
+<img width="316" height="78" alt="image" src="https://github.com/user-attachments/assets/df79e75b-225a-4d72-8369-3570c333b5e4" />
+
+3. service
+
+Tässä tilafunktiossa tein GNU nano editoriin sshd-palvelun käynnissä pitävän funktion.
+
+<img width="249" height="78" alt="image" src="https://github.com/user-attachments/assets/05c39aca-249a-4f05-ac4e-542cc50d56e6" />
+
+4. user
+
+User tilafunktioon tein testikäyttäjän ja sille oman kommentin
+
+<img width="249" height="78" alt="image" src="https://github.com/user-attachments/assets/1debcafb-b313-4fd0-b238-d72c424e3c9f" />
+
+5. cmd
+
+Cmd osio oli minusta kaikista vaikein sillä, en oikein alkuun ymmärtänyt mitä cmd funktio tekee. Lopuksi tajusin, että cmd tilafunktiolla sain tulostettua tekstin konsoliin alla olevilla tiedoilla:
+
+<img width="255" height="78" alt="image" src="https://github.com/user-attachments/assets/a4d30af2-10bd-4711-990c-acac37d27e84" />
+
 
 d) Tee sls-tiedosto
 
