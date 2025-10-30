@@ -2,6 +2,8 @@
 
 ## Työympäristö
 
+Aloitin harjoituksen torstaina päivällä 30.10.2025 omalla läppärilläni.
+
 <img width="510" height="511" alt="image" src="https://github.com/user-attachments/assets/534a4d5f-df8b-493a-a838-f8ef49492111" />
 
 - Macbook Air M2 (8GB RAM, MacOS)
@@ -54,7 +56,35 @@
 2. Target (ryhmä koneita, johon stateja sovelletaan)
 3. State- tiedostot (tiedostot, jotka määrittelee asetukset kohteisiin)
 
+Tiivistelmiin meni noin tunnin verran aikaa.
+
 a) Hei infrakoodi! 
+
+Kokeilin 'sudo salt-call --local' komennolla toimiko koodi paikallisesti. 
+
+Sitten tein tyhjän tiedoston komennolla 'sudo salt-call --local state.single file.managed /tmp/tiedosto' 
+
+<img width="864" height="726" alt="image" src="https://github.com/user-attachments/assets/5d8034ba-17dd-4a1e-a8d9-5531f8bef13e" />
+
+Kuten kuvasta näkyy tyhjä tiedosto tehtiin onnistuneesti.
+
+Sitten katsoin 'ls /tmp/tiedosto' komennolla, että tiedosto oli näkyvissä
+
+<img width="864" height="76" alt="image" src="https://github.com/user-attachments/assets/a96cb766-0eae-449d-960b-3c516e1b3268" />
+
+Ennen kuin aloitin niin komennolla 'sudo salt-call --local state.apply sls' testasin löytyykö tiedostoa, mutta sitä ei löydy koska en ole vielä tehnyt sitä.
+
+<img width="607" height="92" alt="image" src="https://github.com/user-attachments/assets/61103612-1312-4464-ab6e-0ccb0c1f3c2c" />
+
+Tämän jälkeen kirjoitin komennot 'ls /srv/salt' varmistin että kansio näkyy, mutta ei näy koska en vielä ole tehnyt sitä.
+
+Sitten tein kansion 'sudo mkdir /srv/salt/' ja 'ls /srv/salt'. Nyt komento toimi.
+
+<img width="920" height="110" alt="image" src="https://github.com/user-attachments/assets/694f92d6-2257-4328-95ca-76b98f15c870" />
+
+Sitten siirryin 'cd /srv/salt' ja tarkistin että olin oikeassa kansiossa 'pwd'.
+
+<img width="367" height="55" alt="image" src="https://github.com/user-attachments/assets/9184dfdf-b4b4-4cb7-9d83-c6198c51afbe" />
 
 
 
