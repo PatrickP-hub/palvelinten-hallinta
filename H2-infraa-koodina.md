@@ -30,9 +30,9 @@
 **YAML simple structure**
 
 - YAML koostuu kolmesta perus elementistä:
-  1. Scalars (Numero tai teksti)
-  2. Lists (Avaimen alla useita arvoja "-" viivalla ja kahdella välilyönnillä)
-  3. Dictionares (Pareja ja listoja)
+1. Scalars (Numero tai teksti)
+2. Lists (Avaimen alla useita arvoja "-" viivalla ja kahdella välilyönnillä)
+3. Dictionares (Pareja ja listoja)
   
 **List and dictionaries - YAML block structures**
 
@@ -50,9 +50,9 @@
 **A basic example**
 
 - Top tiedosto koostuu kolmesta osasta:
-  1. Environment (kansio jossa on state tiedostoja)
-  2. Target (ryhmä koneita, johon stateja sovelletaan)
-  3. State- tiedostot (tiedostot, jotka määrittelee asetukset kohteisiin)
+1. Environment (kansio jossa on state tiedostoja)
+2. Target (ryhmä koneita, johon stateja sovelletaan)
+3. State- tiedostot (tiedostot, jotka määrittelee asetukset kohteisiin)
 
 a) Hei infrakoodi! 
 
