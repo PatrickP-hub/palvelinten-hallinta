@@ -185,5 +185,7 @@ Salt contributors: https://docs.saltproject.io/salt/user-guide/en/latest/topics/
 
 Salt contributors: https://docs.saltproject.io/en/latest/ref/states/top.html
 
-H2 tehtävä https://terokarvinen.com/palvelinten-hallinta/
+H2 tehtävä: https://terokarvinen.com/palvelinten-hallinta/
+
+Palvelinten hallinta kurssi: https://terokarvinen.com/palvelinten-hallinta/
 
