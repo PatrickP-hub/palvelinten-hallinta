@@ -22,17 +22,41 @@
 
 **Rules of YAML**
 
+- Saltissa käytetään oletuksena YAML- renderöijää.
+- Sillä muutetaan YAML- tiedostot Python tietorakenteiksi.
+- Avaimien pitää olla tarkkoja
+- Älä käytä tabia vaan space näppäintä
+
 **YAML simple structure**
 
+- YAML koostuu kolmesta perus elementistä:
+  1. Scalars (Numero tai teksti)
+  2. Lists (Avaimen alla useita arvoja "-" viivalla ja kahdella välilyönnillä)
+  3. Dictionares (Pareja ja listoja)
+  
 **List and dictionaries - YAML block structures**
+
+- YAML:issa rakenteet tehdään lohkoina:
+- Sisennyksellä kerrotaan mihin jokin tietty asia tai arvo kuuluu.
 
 ### The top file: https://docs.saltproject.io/en/latest/ref/states/top.html
 
 **Introduction**
 
+- Useimmat järjestelmät koostuvat ryhmistä koneista, jotka toimivat yhdessä ja tekevät samanlaisia tehtäviä.
+- Ylläpitäjä voi määrittää roolit näille eri ryhmille, jotka "palvelevat" verkkosivua
+- Top tiedosto top.sls kertoo, mitkä roolit kuuluvat millekin koneiden ryhmille. 
+
 **A basic example**
 
+- Top tiedosto koostuu kolmesta osasta:
+  1. Environment (kansio jossa on state tiedostoja)
+  2. Target (ryhmä koneita, johon stateja sovelletaan)
+  3. State- tiedostot (tiedostot, jotka määrittelee asetukset kohteisiin)
+
 a) Hei infrakoodi! 
+
+
 
 b) Topping.
 
@@ -51,4 +75,5 @@ Salt contributors: https://docs.saltproject.io/salt/user-guide/en/latest/topics/
 
 Salt contributors: https://docs.saltproject.io/en/latest/ref/states/top.html
 
+H2 tehtävä https://terokarvinen.com/palvelinten-hallinta/
 
