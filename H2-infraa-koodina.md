@@ -105,9 +105,24 @@ Testasin viellä 'cat /srv/salt/sls/init.sls', jonka pitäisi näyttää että e
 
 <img width="601" height="58" alt="image" src="https://github.com/user-attachments/assets/2183f070-98c1-43d1-a8fc-7489ddfca373" />
 
-
-
 b) Topping.
+
+Seuraavana vuorossa oli tehdä top-file, jonka aloitin samalla tavalla kuin sls. tiedoston tekemisen 
+Komento 'sudo mkdir /srv/salt/top.sls' tein tiedoston salttiin ja menin muokkaamaan tiedostoa 'sudoedit top.sls' komennolla
+
+<img width="512" height="37" alt="image" src="https://github.com/user-attachments/assets/7b25e60c-cd6a-4608-a90c-4e034fe65e82" />
+
+Laitoin GNU nano editoriin 'base:', kaksi välilyöntiä '*': ja state kohtaan "tiedosto"
+
+<img width="372" height="156" alt="image" src="https://github.com/user-attachments/assets/884cc2e1-08d2-467b-99df-2eead4cf0a42" />
+
+Ctrl + X, Y ja Enter pääsin tallentamaan top.sls tiedoston
+Tämän jälkeen suoritin komennon 'sudo salt-call --local state.apply' , jolla yritin ajaa kaikki tilat.
+
+<img width="706" height="311" alt="image" src="https://github.com/user-attachments/assets/4d487fd6-e273-44bf-aa58-64897b479fcb" />
+
+Sain kuitenkin virhe ilmoituksen, että "top file" ei löydy.
+
 
 c) Viisikko tiedostossa.
 
