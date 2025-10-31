@@ -141,13 +141,13 @@ Aluksi ennen jokaisen tiedoston tekemistä menin komennolla 'cd /srv/salt' polku
 
 ### 1.pkg 
 
-GNU nanoeditoriin laitoin funktion joka asentaa pkg-paketin. 
+GNU nanoeditoriin laitoin funktion joka asentaa pkg-paketin.
 
 <img width="178" height="76" alt="image" src="https://github.com/user-attachments/assets/f7fa34be-197e-404d-9a85-762c5fc67fd2" />
 
 ### 2. file
 
-Tässä tiedostossa tein samalla lailla kuin edellisessä tehtävässä eli ekalle riville tiedosto, toiselle file.managed' ja vikalle teksti.
+Tässä tiedostossa tein samalla lailla kuin edellisessä tehtävässä eli ekalle riville tiedosto, toiselle file.managed' ja vikalle teksti. 
 
 <img width="316" height="78" alt="image" src="https://github.com/user-attachments/assets/df79e75b-225a-4d72-8369-3570c333b5e4" />
 
@@ -172,11 +172,32 @@ Cmd osio oli minusta kaikista vaikein sillä, en oikein alkuun ymmärtänyt mit�
 
 ## d) Tee sls-tiedosto
 
+Aluksi tein kokonaan uuden polun 'sudo mkdir -p /srv/salt/slstila/ ja siirryin siihen 'cd' komennolla
 
+<img width="536" height="78" alt="image" src="https://github.com/user-attachments/assets/7fb9376c-3c5a-48ca-8291-ec4c61369584" />
 
+Sitten lisäsin tähän polkuun file tiedoston johon laitoin alla olevat tiedot.
 
+<img width="502" height="152" alt="image" src="https://github.com/user-attachments/assets/42c6b80d-64a0-4f97-a50c-188083c1c2f8" />
 
+Tämän jälkeen vielä tein pkg tiedoston samaan 'init.sls' teidostoon https://docs.saltproject.io/en/master/ref/states/all/salt.states.pkg.html#module-salt.states.pkg täältä saadulla  tiedolla ja tallensin sen ctrl x + y enter.
 
+<img width="251" height="133" alt="image" src="https://github.com/user-attachments/assets/a51c6265-b589-4509-808e-91e9cd838ff9" />
+
+Sittten kokeilin ajaa komennolla 'state '*' state.sls slstila' molemmat sls tiedostot.
+
+<img width="693" height="467" alt="image" src="https://github.com/user-attachments/assets/c5d73655-a652-4e52-9aae-3cc2b40a656e" />
+
+Komento onnistui ja sain onnistuneet ilmoitukset että tiedosto oli tehty onnistuneesti, sekä pkg.installed onnistui.
+Ja kuten alla näkyy "succeeded" numero oli 2 mikä tarkoitti että komento ajoi molemmat samalla kertaa.
+
+Kokeilin vielä lisätä yhden tiedoston service, jonka löysin sivulta https://docs.saltproject.io/en/master/ref/states/all/salt.states.service.html
+
+Sitten ajoin komennon 'state '*' state.sls slstila' uudestaan ja katsoin mikä oli lopputulos.
+
+<img width="693" height="611" alt="image" src="https://github.com/user-attachments/assets/990f5027-ea0a-4cb6-9d3a-85f0b429d511" />
+
+Service komento oli kuitenkin epäonnistunut.
 ## Lähteet
 
 Karvinen 2014: https://terokarvinen.com/2024/hello-salt-infra-as-code/
@@ -188,4 +209,6 @@ Salt contributors: https://docs.saltproject.io/en/latest/ref/states/top.html
 H2 tehtävä: https://terokarvinen.com/palvelinten-hallinta/
 
 Palvelinten hallinta kurssi: https://terokarvinen.com/palvelinten-hallinta/
+
+salt.states.pkg: https://docs.saltproject.io/en/master/ref/states/all/salt.states.pkg.html#module-salt.states.pkg
 
