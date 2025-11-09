@@ -140,6 +140,15 @@ Tehtävän annossa oli tärkeää pistää masterin ip muistiin joten katsoin se
 Sitten siirryin tekemään salt-minionia `vagrant ssh t001` komennolla ja asensin samoilla komennoilla curlit ja avaimet.
 Latasin salt-minionin `sudo apt-get install -y salt-minion` ja menin muokkaamaan `sudoedit /etc/salt/minion` antamalla masterin osoitteen sekä ID:n minionille
 
+<img width="178" height="63" alt="image" src="https://github.com/user-attachments/assets/18f54de6-0127-44ee-a794-99f00bbec304" />
+
+Ctrl X + y ja tiedosto oli tallennettu
+Lopuksi vielä annoin komennot `sudo apt update` ja `sudo systemctl restart salt-minion.service` mutta se ei näyttänyt toimivan joten annoin `stop` ja `start`
+
+
+
+
+
 
 
 
