@@ -2,15 +2,16 @@
 
 ## Oma ympäristö
 
-Aloitin harjoituksen Sunnuntaina klo 13 aikoihin päivällä läppärilläni jonka speksit on.
+Aloitin harjoituksen Sunnuntaina klo 13 aikoihin päivällä pöytäkoneellani jonka speksit on.
 
-- MacBook air M2 (8GB RAM, MacOS)
-- ARM 64-bit
+- Pöytäkone (16GB RAM, Windows 11, AMD Ryzen 2600 6-ydin, 256GB SSD)
+- AMD 64-bit
 - Oracle VirtualBox Manager
 - 4000 MB Base memory
-- 20 GB Storage
+- 60 GB Storage
 
-<img width="511" height="378" alt="image" src="https://github.com/user-attachments/assets/8c0130b7-fc1c-4b5d-b140-fd9c7f7e206d" />
+<img width="539" height="392" alt="image" src="https://github.com/user-attachments/assets/f6ce02cd-c4d5-4422-b003-dbe9e595c512" />
+
 
 ## Lue ja tiivistä
 
@@ -38,21 +39,33 @@ Aloitin harjoituksen Sunnuntaina klo 13 aikoihin päivällä läppärilläni jon
 ## a) Hello Vagrant!
 
 Löysin osoitteesta : https://developer.hashicorp.com/vagrant/downloads
-Josta latasin Vagrant tiedoston MacOS järjestelmälleni ARM64 pohjaisen version.
+Josta latasin Vagrant tiedoston Windows järjestelmälleni AMD64 pohjaisen version.
 
-<img width="750" height="140" alt="image" src="https://github.com/user-attachments/assets/2aa95a99-c9ba-45cf-973a-c32fddac686d" />
+<img width="293" height="191" alt="image" src="https://github.com/user-attachments/assets/da2b524f-bba1-4431-8727-bb8b056ef045" />
 
 Menin eteenpäin ja lopuksi installoin Vagrantin
-
-<img width="396" height="251" alt="image" src="https://github.com/user-attachments/assets/7c9d7992-8633-4a06-9b0d-614b8b5037dd" />
+Ja Vagrant pyysi restarttaamaan koneeni
 
 Lopuksi varmistin vielä Terminaalissa komennolla `version -- vagrant` löytyykö Vagrant
 
-<img width="316" height="26" alt="image" src="https://github.com/user-attachments/assets/1b712b39-9de5-4a0a-b4b8-602d87db829a" />
+<img width="291" height="43" alt="image" src="https://github.com/user-attachments/assets/f1219184-4895-45d2-87d1-ac6921650fb0" />
 
 Sehän löytyi!
 
 ## b) Linux Vagrant
+
+Sitten oli aika luoda Vagrant file
+Aluksi tein kansion mkdir vagrantti
+Siirryin kansioon cd vagrantti
+Ja loin tiedoston vagrant init debian/bookworm64
+
+<img width="602" height="180" alt="image" src="https://github.com/user-attachments/assets/7f4f5c51-9428-42bd-8471-e1ca7ff4f00b" />
+
+Tämän jälkeen käynnistin Vagrantin komennolla vagrant up
+
+<img width="928" height="217" alt="image" src="https://github.com/user-attachments/assets/2549a7ac-892f-4900-a2c9-8522348649cb" />
+
+Kuten kuvasta näkyy tähän kului noin aikaa 4 minuuttia
 
 
 
