@@ -145,6 +145,8 @@ Latasin salt-minionin `sudo apt-get install -y salt-minion` ja menin muokkaamaan
 Ctrl X + y ja tiedosto oli tallennettu
 Lopuksi vielä annoin komennot `sudo apt update` ja `sudo systemctl restart salt-minion.service` mutta se ei näyttänyt toimivan joten annoin `stop` ja `start`
 
+Sitten oli aika siirtyä takaisin masterille ja siellä katsoin komennolla `sudo salt-key -L` avaimet ja hyväksyin kaikki avaimet `sudo salt-key -A` 
+
 
 
 
