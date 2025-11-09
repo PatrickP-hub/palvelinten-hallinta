@@ -111,7 +111,37 @@ Testasin vielä pingata toisella koneella ja katsoin toimiko tämä `ping -c 1 1
 
 <img width="549" height="129" alt="image" src="https://github.com/user-attachments/assets/23f6ce87-5358-4051-a165-9ee8f87d7e51" />
 
-## d) Herra-orja verkossa
+Ja tämän jälkeen poistin virtuaalikoneet ja pääsin aloittamaan taas puhtaalta pöydältä :)
+
+## d) Herra-orja verkossa 
+
+Aloitin tekemällä kansion "herraorja" ja siirryin sinne `cd`komennolla, sekä tein `vagrant init` komennolla tiedoston
+Seuraavaksi tein taas notepadiin muokkaukset teron sivujen antamilla ohjeilla https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file
+
+<img width="631" height="25" alt="image" src="https://github.com/user-attachments/assets/ac12eae6-48e6-4cd6-a09c-b69e2ef3f2cc" />
+
+Vaihdoin osiosta taas "bullseye" -> "bookworm" ja tallensin notepadin ja sitten käynnistin vagrantin `vagrant up`
+
+<img width="506" height="802" alt="image" src="https://github.com/user-attachments/assets/444e3ffe-cc51-44cc-9dce-0aeb5a131fdb" />
+
+Käynnistämiseen meni taas jotakuinkin 3minuuttia.
+
+<img width="366" height="172" alt="image" src="https://github.com/user-attachments/assets/ac4e4b2c-8ad3-437e-bff5-94a09e10bae2" />
+
+Sitten oli aika siirtyä tmaster käyttäjälle `vagrant ssh tmaster` komennolla ja sitten installoin curl:in `sudo apt install curl`
+Tämän jälkeen tein avaimille kansion `mkdir -p /etc/apt/keyrings` sekä latasin avaimet: 
+`curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp` ja `curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
+`
+Sitten jokaisen sudo muutoksen jälkeen päivitin `sudo apt update` ja latasin salt-masterin `sudo apt-get -y install salt-master`
+Tehtävän annossa oli tärkeää pistää masterin ip muistiin joten katsoin sen `hostname -I` komennolla ja pistin muistiin
+
+<img width="518" height="36" alt="image" src="https://github.com/user-attachments/assets/8ffa3fcd-5a23-461d-9447-4b07bf095574" />
+
+Sitten siirryin tekemään salt-minionia `vagrant ssh t001` komennolla ja asensin samoilla komennoilla curlit ja avaimet.
+Latasin salt-minionin `sudo apt-get install -y salt-minion` ja menin muokkaamaan `sudoedit /etc/salt/minion` antamalla masterin osoitteen sekä ID:n minionille
+
+
+
 
 ## e) Kokeile vähintään kahta tilaa verkon yli
 
