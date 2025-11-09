@@ -147,14 +147,35 @@ Lopuksi vielä annoin komennot `sudo apt update` ja `sudo systemctl restart salt
 
 Sitten oli aika siirtyä takaisin masterille ja siellä katsoin komennolla `sudo salt-key -L` avaimet ja hyväksyin kaikki avaimet `sudo salt-key -A` 
 
+<img width="415" height="209" alt="image" src="https://github.com/user-attachments/assets/735524c6-86c6-42f0-a671-782303959165" />
 
+Sitten testasin että toimiko minion komennolla `sudo salt '*' cmd.run 'whoami'` 
 
+<img width="450" height="57" alt="image" src="https://github.com/user-attachments/assets/fc851c75-b0a8-4db8-a94b-eb9cf00186ac" />
 
-
-
-
+Onnistui!
 
 ## e) Kokeile vähintään kahta tilaa verkon yli
+
+Tässä kokeilin vielä PKG sekä CMD tilafunktiota
+
+### PKG
+
+Annoin komennon `sudo salt '*' state.single pkg.installed name=tree`
+
+<img width="630" height="456" alt="image" src="https://github.com/user-attachments/assets/cb9b524c-de7f-43ff-b062-7ab7523842fe" />
+
+Toimi kuten näkyy kuvasta, minioniin oli onnistuneesti ladattu pkg
+
+### CMD 
+
+Viimeiseksi komento `sudo salt '*' cmd.run 'whoami'`
+
+<img width="447" height="59" alt="image" src="https://github.com/user-attachments/assets/24474893-3ebe-40fe-9df5-9794494f8b1a" />
+
+Kuten kuvasta näkyy master pystyi ajamaan komennon onnistuneesti minionilla ja se suorittaa sen root-oikeuksilla.
+
+### Tehtävä oli kivan haastava ja sain suoritettua tehtävät iltaan mennessä pitäen pieniä taukoja.
 
 ## Lähteet
 
