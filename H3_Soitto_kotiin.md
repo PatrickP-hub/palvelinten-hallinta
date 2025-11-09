@@ -55,21 +55,43 @@ Sehän löytyi!
 ## b) Linux Vagrant
 
 Sitten oli aika luoda Vagrant file
-Aluksi tein kansion mkdir vagrantti
-Siirryin kansioon cd vagrantti
-Ja loin tiedoston vagrant init debian/bookworm64
+Aluksi tein kansion `mkdir vagrantti`
+Siirryin kansioon `cd vagrantti`
+Ja loin tiedoston `vagrant init debian/bookworm64`
 
-<img width="602" height="180" alt="image" src="https://github.com/user-attachments/assets/7f4f5c51-9428-42bd-8471-e1ca7ff4f00b" />
+<img width="366" height="60" alt="image" src="https://github.com/user-attachments/assets/786f465c-dd60-4ba4-99d6-e6e71263d410" />
 
 Tämän jälkeen käynnistin Vagrantin komennolla vagrant up
 
 <img width="928" height="217" alt="image" src="https://github.com/user-attachments/assets/2549a7ac-892f-4900-a2c9-8522348649cb" />
 
 Kuten kuvasta näkyy tähän kului noin aikaa 4 minuuttia
+Sitten kun lataus valmistui VirtualBox:iin ilmestyi uusi virtuaalikone
 
+<img width="602" height="180" alt="image" src="https://github.com/user-attachments/assets/7f4f5c51-9428-42bd-8471-e1ca7ff4f00b" />
 
+Seuraavaksi muodistin ssh yhteyden virtuaalikoneeseen komennolla `vagrant ssh`
+
+<img width="813" height="175" alt="image" src="https://github.com/user-attachments/assets/412b441a-8902-441d-a436-725985949ecb" />
+
+Kokeilin vielä komennoilla että vagrant löysi itsensä `whoami` ja sitten poistuin siitä `exit` komennolla
+
+<img width="249" height="80" alt="image" src="https://github.com/user-attachments/assets/76cac6a2-0573-42fe-9fce-a5e22a124a26" />
+
+Sitten vielä tuhosin vagrantin `vagrant destroy` komennolla + y 
+
+<img width="656" height="82" alt="image" src="https://github.com/user-attachments/assets/f3e484e6-8b1b-484d-8067-a1c09db019e1" />
 
 ## c) Kaksin kaunihimpi
+
+Aloitin tehtävän tekemällä uuden kansion `mkdir kaksin-kaunihimpi`ja siirryin kansioon `cd`komennolla
+Sitten loin taas tiedoston `vagrant init debian/bookworm64`
+
+<img width="596" height="219" alt="image" src="https://github.com/user-attachments/assets/8eb3496d-596c-45b1-9358-c92c208cd7d8" />
+
+Kun olin tiedoston otin yhteyden virtuaalikoneeseen `vagrant up` komennolla, tämä kesti taas muutaman minuutin käynnistyä
+Sitten tein kaksi konetta `vagrant ssh 1` ja `vagrant ssh 2`
+Ensimmäiseksi kokeilin pingata ensimmäistä konetta 
 
 ## d) Herra-orja verkossa
 
