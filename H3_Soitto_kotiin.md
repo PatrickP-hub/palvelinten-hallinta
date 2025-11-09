@@ -89,9 +89,27 @@ Sitten loin taas tiedoston `vagrant init debian/bookworm64`
 
 <img width="596" height="219" alt="image" src="https://github.com/user-attachments/assets/8eb3496d-596c-45b1-9358-c92c208cd7d8" />
 
-Kun olin tiedoston otin yhteyden virtuaalikoneeseen `vagrant up` komennolla, tämä kesti taas muutaman minuutin käynnistyä
-Sitten tein kaksi konetta `vagrant ssh 1` ja `vagrant ssh 2`
-Ensimmäiseksi kokeilin pingata ensimmäistä konetta 
+Kun olin tehnyt tiedoston otin yhteyden virtuaalikoneeseen `vagrant up` komennolla, tämä kesti taas muutaman minuutin käynnistyä
+
+Muokkasin nanosta tiedostoa ja annoin Teron ohjeiden mukaan nämä tiedot tältä sivulta: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/ 
+
+Eli avasin notepadin `notepad C:\Users\palmr\kaksin-kaunihimpi\Vagrantfile`
+
+<img width="759" height="674" alt="image" src="https://github.com/user-attachments/assets/1d94126f-23ee-4ad0-8aa8-ac0cb0cae6a7" />
+
+Muokkasin vain kohtaa bullseye -> bookworm että tämä toimii windowsilla 
+
+<img width="500" height="618" alt="image" src="https://github.com/user-attachments/assets/02f62657-fd5c-4d70-9beb-ae9b1dc9168b" />
+
+Tallensin notepadin
+Sitten käynnistin uudet koneet `vagrant up` Tähän meni hetki aikaa kun koneet käynnistyivät VirtualBoxissa.
+Kun koneet olivat käynnissä kirjauduin komennolla `vagrant ssh t001` sekä `vagrant ssh t002` Kun molempiin pääsin onnistuneesti oli aika poistua `exit` komennolla 
+
+<img width="777" height="268" alt="image" src="https://github.com/user-attachments/assets/3a5c7d8b-d0ea-4b58-b3c4-e6575dd23f19" />
+
+Testasin vielä pingata toisella koneella ja katsoin toimiko tämä `ping -c 1 192.168.88.101` ja sehän toimi!
+
+<img width="549" height="129" alt="image" src="https://github.com/user-attachments/assets/23f6ce87-5358-4051-a165-9ee8f87d7e51" />
 
 ## d) Herra-orja verkossa
 
