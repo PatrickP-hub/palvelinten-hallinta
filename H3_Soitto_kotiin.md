@@ -10,6 +10,8 @@ Aloitin harjoituksen Sunnuntaina klo 13 aikoihin päivällä läppärilläni jon
 - 4000 MB Base memory
 - 20 GB Storage
 
+<img width="511" height="378" alt="image" src="https://github.com/user-attachments/assets/8c0130b7-fc1c-4b5d-b140-fd9c7f7e206d" />
+
 ## Lue ja tiivistä
 
 ### Karvinen 2021: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
@@ -35,7 +37,24 @@ Aloitin harjoituksen Sunnuntaina klo 13 aikoihin päivällä läppärilläni jon
     
 ## a) Hello Vagrant!
 
+Löysin osoitteesta : https://developer.hashicorp.com/vagrant/downloads
+Josta latasin Vagrant tiedoston MacOS järjestelmälleni ARM64 pohjaisen version.
+
+<img width="750" height="140" alt="image" src="https://github.com/user-attachments/assets/2aa95a99-c9ba-45cf-973a-c32fddac686d" />
+
+Menin eteenpäin ja lopuksi installoin Vagrantin
+
+<img width="396" height="251" alt="image" src="https://github.com/user-attachments/assets/7c9d7992-8633-4a06-9b0d-614b8b5037dd" />
+
+Lopuksi varmistin vielä Terminaalissa komennolla `version -- vagrant` löytyykö Vagrant
+
+<img width="316" height="26" alt="image" src="https://github.com/user-attachments/assets/1b712b39-9de5-4a0a-b4b8-602d87db829a" />
+
+Sehän löytyi!
+
 ## b) Linux Vagrant
+
+
 
 ## c) Kaksin kaunihimpi
 
