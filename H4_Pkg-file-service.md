@@ -67,11 +67,11 @@ Ja varmistin että se oli päällä `sudo systemctl status salt-minion`
 
 <img width="775" height="270" alt="image" src="https://github.com/user-attachments/assets/8cfc6248-cb00-473a-8917-86ce38ef516b" />
 
-Sitten lisäsin portti22 kuuntelemaan `sudo nano /etc/ssh/sshd_config`
+Sitten lisäsin portti22 kuuntelemaan masterille `sudo nano /etc/ssh/sshd_config`
 
 <img width="97" height="62" alt="image" src="https://github.com/user-attachments/assets/6857deba-8b5e-44a4-a36e-2c74c2b830f0" />
 
-Sitten oli aika siirtyä masterille kokeilemaan toimiiko, ensin piti vielä hyväksyä avaimet että minioniin saa yhteyden
+Sitten oli aika siirtyä kokeilemaan toimiiko, ensin piti vielä hyväksyä avaimet että minioniin saa yhteyden
 `sudo salt-key -L` ja `sudo salt-key -A`
 
 <img width="409" height="227" alt="image" src="https://github.com/user-attachments/assets/7f3f09cb-faa3-4581-9abf-bad7f3e7e654" />
@@ -84,9 +84,15 @@ Ja menin muokkaamaan init.sls tiedostoa josta löysin tarvittavat Teron sivuilta
 
 <img width="765" height="549" alt="image" src="https://github.com/user-attachments/assets/5eeeea7e-3e1f-4e97-b9a9-e2c6a03e75ce" />
 
-Tuloste näytti kuitenkin virheilmoitusta, 
+Tuloste näytti kuitenkin virheilmoitusta, huomasin että tiedostoon oli jäänyt kirjoitusvirhe joten korjasin sen ja kokeilin uudelleen
 
-Näiden jälkeen kokeilin vielä yhteydet 
+<img width="991" height="1136" alt="image" src="https://github.com/user-attachments/assets/71bfe79b-f9ce-4bc3-a069-92bad11a7d74" />
+
+Näiden jälkeen kokeilin vielä yhteydet komennolla `nc -vz 192.168.12.100 1234` ja `nc -vz 192.168.12.100 22` nämä antoivat onnistuneet yhteydet!
+
+<img width="852" height="122" alt="image" src="https://github.com/user-attachments/assets/ce5b50e7-dbac-4db2-b8ae-7d09f435c98b" />
+
+Tehtäviin kului noin 3 tuntia ja menojen takia minulla ei löytynyt aikaa vapaaehtoisille tehtäville.
 
 ## Lähteet
 
