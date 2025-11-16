@@ -67,7 +67,7 @@ Ja varmistin että se oli päällä `sudo systemctl status salt-minion`
 
 <img width="775" height="270" alt="image" src="https://github.com/user-attachments/assets/8cfc6248-cb00-473a-8917-86ce38ef516b" />
 
-Sitten lisäsin portti22 kuuntelemaan masterille `sudo nano /etc/ssh/sshd_config`
+Sitten lisäsin portti22 kuuntelemaan masterille `sudo nano /etc/ssh/sshd_config` kuvassa virheenä vain 123 vaikka lisäsin jälkeenpäin 1234
 
 <img width="97" height="62" alt="image" src="https://github.com/user-attachments/assets/6857deba-8b5e-44a4-a36e-2c74c2b830f0" />
 
