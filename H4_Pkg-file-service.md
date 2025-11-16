@@ -84,9 +84,11 @@ Ja menin muokkaamaan init.sls tiedostoa josta löysin tarvittavat Teron sivuilta
 
 <img width="765" height="549" alt="image" src="https://github.com/user-attachments/assets/5eeeea7e-3e1f-4e97-b9a9-e2c6a03e75ce" />
 
-Tuloste näytti kuitenkin virheilmoitusta, huomasin että tiedostoon oli jäänyt kirjoitusvirhe joten korjasin sen ja kokeilin uudelleen
+Tuloste näytti kuitenkin virheilmoitusta, huomasin että tiedostoon oli jäänyt ylimääräinen välilyönti joten korjasin sen ja kokeilin uudelleen
 
 <img width="991" height="1136" alt="image" src="https://github.com/user-attachments/assets/71bfe79b-f9ce-4bc3-a069-92bad11a7d74" />
+
+Sain onnistuneet ilmoitukset!
 
 Näiden jälkeen kokeilin vielä yhteydet komennolla `nc -vz 192.168.12.100 1234` ja `nc -vz 192.168.12.100 22` nämä antoivat onnistuneet yhteydet!
 
@@ -102,3 +104,4 @@ Karvinen 2018: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daem
 
 Salt Vagrant: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file:~:text=Vagrantfile%20in%20place.-,Ready%20made%20Vagrantfile%20for%20three%20computers,end,-Run%20Three%20Computers
 
+Pkg file service: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh#:~:text=%24%20cat%20/srv/salt/sshd.sls%0Aopenssh%2Dserver%3A%0A%20pkg.installed%0A/etc/ssh/sshd_config%3A%0A%20file.managed%3A%0A%20%20%20%2D%20source%3A%20salt%3A//sshd_config%0Asshd%3A%0A%20service.running%3A%0A%20%20%20%2D%20watch%3A%0A%20%20%20%20%20%2D%20file%3A%20/etc/ssh/sshd_config
