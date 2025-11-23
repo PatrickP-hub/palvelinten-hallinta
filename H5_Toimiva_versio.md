@@ -146,9 +146,23 @@ Sitten tuhotaan muutokset ja katsotaan uudelleen
 
 ## d) Tukki. Tarkastele ja selitä varastosi lokia
 
+Annoin komennon jolla pääsin katsomaan tekemiäni muutoksia 
 
+`git log --patch`
+
+<img width="904" height="687" alt="image" src="https://github.com/user-attachments/assets/04a59590-e210-4514-b135-91f68952caf7" />
+
+Sieltähän tuli esiin tekemiäni muutoksia
+Esimerkiksi muutoksia ja muutoksia pt2 kohdissa näkyy kuka on tehnyt muutoksia, koska ja mitä ollaan lisätty 
+Vihreellä värillä näkyy alempana esimerkiksi teksti mikä lisättiin README.md tiedostoon
+
+Sitten kun rullasin vielä alemmaksi sain esiin GNU public lisenssin tiedot
+
+<img width="524" height="293" alt="image" src="https://github.com/user-attachments/assets/beadcb56-da56-4ba4-be95-854ae2c85ec3" />
 
 ## e) Suolattu rakki. Aja Salt-tiloja omasta varastostasi.
+
+
 
 
 ## Lähteet
