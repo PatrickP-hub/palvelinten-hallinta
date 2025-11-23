@@ -106,6 +106,7 @@ Huomasin että git push komennon kohdalla se kysyi käyttäjätunnusta ja salasa
 <img width="979" height="45" alt="image" src="https://github.com/user-attachments/assets/ac1a81ca-5146-4abc-95b1-14ec24e8a487" />
 
 ja sitten uudelleen komento 
+
 `git push`
 
 <img width="617" height="197" alt="image" src="https://github.com/user-attachments/assets/7ec99434-d792-455e-8777-1419a259b63a" />
@@ -116,9 +117,36 @@ Ja sehän onnistui!
 
 ## c) Doh! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’.
 
+Tein uuden tiedoston 
 
+`micro init.sls`
+
+annoin nämä tiedot 
+
+<img width="205" height="54" alt="image" src="https://github.com/user-attachments/assets/1d87f847-0bb2-4173-b0c7-f3eb137cba0a" />
+
+Sitten katsoin lisäsin init.sls tiedoston mutta en committannu sitä vaan katsoin sen statuksen
+
+`git add`
+
+`git status`
+
+<img width="552" height="180" alt="image" src="https://github.com/user-attachments/assets/68c3dddc-75c2-4819-81dc-7765437230e6" />
+
+Kuten kuvasta näkyy tiedosto on siellä mutta se vaatii committaamista
+Sitten tuhotaan muutokset ja katsotaan uudelleen
+
+`git reset --hard`
+
+`git status`
+
+<img width="594" height="154" alt="image" src="https://github.com/user-attachments/assets/b8061e31-acd9-4907-9e22-4b0fd945db84" />
+
+"nothing to commit, working tree clean" eli komento toimi eikä committavaa enään ole :-)
 
 ## d) Tukki. Tarkastele ja selitä varastosi lokia
+
+
 
 ## e) Suolattu rakki. Aja Salt-tiloja omasta varastostasi.
 
