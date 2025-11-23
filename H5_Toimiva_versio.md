@@ -164,17 +164,47 @@ Sitten kun rullasin vielä alemmaksi sain esiin GNU public lisenssin tiedot
 
 Tein eka kansion salt tiedostoille
 
-`mkdir -p /srv/salt` & `cd srv/salt`
+`mkdir -p /srv/salt/kansio` & `mkdir -p /srv/salt/kansio1`
 
-`mkdir kansio` & `cd kansio`
+Ja sitten tiedostot saltille jotka löysin Teron valmiista srv/salt kansiosta omiin kansioihin 
 
-Ja sitten tiedostot saltille jotka löysin Teron valmiista srv/salt kansiosta
+`sudo nano /srv/salt/kansio/init.sls`  & `sudo nano /srv/salt/kansio1/init.sls`
 
-`micro init.sls`
+<img width="281" height="74" alt="image" src="https://github.com/user-attachments/assets/1845d403-8e84-4f77-808f-620b18eb542d" />
 
-<img width="336" height="273" alt="image" src="https://github.com/user-attachments/assets/8b16dea6-e8d0-46ff-92d3-ce5f6e59606d" />
+ja 
 
+<img width="175" height="71" alt="image" src="https://github.com/user-attachments/assets/ee4880fb-3ac3-4130-a58d-a758c56a761e" />
 
+Sitten tein vielä top.sls tiedoston
+
+`sudo nano /srv/salt/top.sls`
+
+<img width="185" height="124" alt="image" src="https://github.com/user-attachments/assets/2da86ef0-e82b-42b1-b5e7-ddc1e633e12d" />
+
+Oli aika ajaa masterilla komento
+
+`sudo salt-call --local state.apply`
+
+<img width="922" height="753" alt="image" src="https://github.com/user-attachments/assets/19b4edc3-44f3-403f-88d3-e9f8286e9dce" />
+
+Jes sehän toimi ja sit vielä uudelleen että saadaan idempotenssi
+
+<img width="918" height="555" alt="image" src="https://github.com/user-attachments/assets/7d274483-d5ff-495e-9af6-1821ab56f3a6" />
+
+Lopuksi annoin vielä samat git komennot ja katsoin tuliko ne githubiin näkyviin
+
+`git add .`
+
+`git commit`
+
+`git pull`
+
+`git push`
+
+<img width="651" height="225" alt="image" src="https://github.com/user-attachments/assets/82ef73f1-2769-4eb8-ace9-09d11a45e03f" />
+
+Boom siellähän ne!
 
 
 ## Lähteet
