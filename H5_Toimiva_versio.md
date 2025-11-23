@@ -16,8 +16,11 @@ Aloitin harjoituksen Sunnuntaina klo 13 aikoihin kotiympäristössä pöytäkone
 ### Gitin käyttö on lähinnä 'git add . && git commit; git pull && git push'. https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository ja https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
 - `Git add` tarkoittaa lyhyesti että tiedosto merkitään "staged" tilaan, eli tiedosto valmistellaan seuraavaan commit snapshottiin sellaisena kun se on lisäyshetkellä
+  
 - `Git commit` taas tallentaa tiedoston tekevät muutokset Git-historiaan
+  
 - `Git pull` hakee etärepositorion uudet commitit ja yhdistää ne automaattisesti paikalliseen haaraan
+  
 - `Git push` lähettää paikalliset commitit etärepositorioon ja päivittää paikalliseen haaraan
 
 ### Varaston [terokarvinen/suolax/](https://github.com/terokarvinen/suolax/) historia, eli loki ja muutokset. 
@@ -44,20 +47,27 @@ Aloitin tehtävän avaamalla Githubin ja tein uuden varaston
 ## b) Dolly. Kloonaa edellisessä kohdassa tehty uusi varasto itsellesi
 
 Aloitin eka komennoilla jotka otin talteen viime tunnilta käytyjen komennon avulla:
+
 `sudo apt update`
+
 `sudo apt-get install git` lataa gitin
 
 Seuraavaksi kirjauduin virtuaalikoneella githubbiin , jotta voin hakea ssh avaimen sieltä kloonaamista varten 
 Sitten kloonasin oman uuden varaston 
+
 `git clone oman varaston URL`
 
 <img width="884" height="157" alt="image" src="https://github.com/user-attachments/assets/abbec06f-acde-4e97-8a9d-26a7c63d7c3c" />
 
 Sitten oli aika etsiä ssh avain gittiä varten komennolla 
+
 `ssh-keygen`
+
 Enteriä kolme kertaa että avain tallentaa sen oikeaan paikkaan
 Sitten komennot 
+
 `cd .ssh/` siirryin ssh kansioon mistä avain löytyyy
+
 `cat id_ed25519.pub` #pub tärkeä sillä se on se julkinen avain
 
 
@@ -69,23 +79,44 @@ Ja vein ssh public keyn tiedot Githubiin
 <img width="691" height="245" alt="image" src="https://github.com/user-attachments/assets/788b93a6-3857-497a-aeae-6c7ec4847d22" />
 
 Sitten siirryin uuteenvarastoon
+
 `cd Uusivarasto`
+
 Ja kokelin tehdä muutoksen 
+
 `micro README.md`
 
 <img width="421" height="75" alt="image" src="https://github.com/user-attachments/assets/50173116-dfcb-46b8-a55e-a14d738d99c3" />
 
 Tein muutokset tallensin ja poistuin editorista
 Ja sitten oli aika antaa git komennot
+
 `git add .`
+
 `git commit`
+
 `git pull`
+
 `git push`
 
+Huomasin että git push komennon kohdalla se kysyi käyttäjätunnusta ja salasanaa joten tajusin etten ollut liittänyt SSH URL osoitetta vielä virtuaalikoneeseeni joten tein sen seuravaaksi
 
+`git clone SSH URL`
 
+<img width="979" height="45" alt="image" src="https://github.com/user-attachments/assets/ac1a81ca-5146-4abc-95b1-14ec24e8a487" />
+
+ja sitten uudelleen komento 
+`git push`
+
+<img width="617" height="197" alt="image" src="https://github.com/user-attachments/assets/7ec99434-d792-455e-8777-1419a259b63a" />
+
+<img width="649" height="204" alt="image" src="https://github.com/user-attachments/assets/9219b65f-2d0b-4472-be54-8a661a13bfb8" />
+
+Ja sehän onnistui!
 
 ## c) Doh! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’.
+
+
 
 ## d) Tukki. Tarkastele ja selitä varastosi lokia
 
