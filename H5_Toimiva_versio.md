@@ -1,19 +1,35 @@
 # H5 Toimiva versio
 ## Oma ympäristö
 
--
+Aloitin harjoituksen Sunnuntaina klo 13 aikoihin kotiympäristössä pöytäkoneellani
+
+- Pöytäkone (Windows 11, 16GB RAM, AMD Ryzen 2600 6-ydin, 256GB SSD)
 
 ## x) Lue ja tiivistä
 
 ### Chacon and Straub 2014: https://git-scm.com/book/en/v2 ja https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
 
-- 
+- Tässä kirjassa kerrotaan Gitin käytöstä, komennoista, protokollista ja monista Git: in ominaisuuksista
+- Getting started osiossa kerrotaan esimerkiksi että, tiedostot kulkevat tilojen modified, staged ja committed läpi
+- Gitissä lähes kaikki toiminnot toimivat paikallisesti mikä eroaa muista versionhallintajärjestelmistä
 
-### Gitin käyttö on lähinnä 'git add . && git commit; git pull && git push'.
+### Gitin käyttö on lähinnä 'git add . && git commit; git pull && git push'. https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository ja https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+- Git add tarkoittaa lyhyesti että tiedosto merkitään "staged" tilaan, eli tiedosto valmistellaan seuraavaan commit snapshottiin sellaisena kun se on lisäyshetkellä
+- Git commit taas tallentaa tiedoston tekevät muutokset Git-historiaan
+- Git pull hakee etärepositorion uudet commitit ja yhdistää ne automaattisesti paikalliseen haaraan
+- Git push lähettää paikalliset commitit etärepositorioon ja päivittää paikalliseen haaraan
 
 ### Varaston [terokarvinen/suolax/](https://github.com/terokarvinen/suolax/) historia, eli loki ja muutokset. 
 
+<img width="707" height="61" alt="image" src="https://github.com/user-attachments/assets/e5e18ce7-e633-4292-a227-3d8c605c521d" />
+
+- Teron tekemässä varastossa kävin katsomassa commit historiaa ja muutoksia 
+- Huomasin että tero oli antanut tiedostolle lisenssin ja tehnyt muutoksia README.md tiedostoon https://github.com/terokarvinen/suolax/commit/45c80a7016bb7e7a541098580272ef8ac0904f46 jonka löysin täältä 
+
 ## a) Online. Tee uusi varasto GitHubiin
+
+
 
 ## b) Dolly. Kloonaa edellisessä kohdassa tehty uusi varasto itsellesi
 
@@ -32,4 +48,10 @@ Git - Book: https://git-scm.com/book/en/v2
 
 Git - Getting started: https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
 
+Git basics - Recording with basics: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+Git basics - Working with remotes: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
 Tero Karvinen varasto: [terokarvinen/suolax/](https://github.com/terokarvinen/suolax/)
+
+Tero Karvinen commit: https://github.com/terokarvinen/suolax/commit/45c80a7016bb7e7a541098580272ef8ac0904f46
