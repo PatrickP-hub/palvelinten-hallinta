@@ -160,7 +160,19 @@ Sitten kun rullasin vielä alemmaksi sain esiin GNU public lisenssin tiedot
 
 <img width="524" height="293" alt="image" src="https://github.com/user-attachments/assets/beadcb56-da56-4ba4-be95-854ae2c85ec3" />
 
-## e) Suolattu rakki. Aja Salt-tiloja omasta varastostasi.
+## e) Suolattu rakki. Aja Salt-tiloja omasta varastostasi. Käyttäen Teron vinkkejä https://github.com/terokarvinen/suolax
+
+Tein eka kansion salt tiedostoille
+
+`mkdir -p /srv/salt` & `cd srv/salt`
+
+`mkdir kansio` & `cd kansio`
+
+Ja sitten tiedostot saltille jotka löysin Teron valmiista srv/salt kansiosta
+
+`micro init.sls`
+
+<img width="336" height="273" alt="image" src="https://github.com/user-attachments/assets/8b16dea6-e8d0-46ff-92d3-ce5f6e59606d" />
 
 
 
