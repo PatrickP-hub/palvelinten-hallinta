@@ -204,7 +204,7 @@ Lopuksi annoin vielä samat git komennot ja katsoin tuliko ne githubiin näkyvii
 
 <img width="651" height="225" alt="image" src="https://github.com/user-attachments/assets/82ef73f1-2769-4eb8-ace9-09d11a45e03f" />
 
-Boom siellähän ne!
+Boom siellähän ne! Tehtävät olivat ehkä kurssin mielenkiintoisimmat tähän asti ja näihin tehtäviin kului noin 5tuntia aikaa.
 
 
 ## Lähteet
